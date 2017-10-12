@@ -7,5 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
  * 动态构建sql测试
  */
 @Mapper
-public interface DynamicSqlDao {
+public interface DynamicSqlDao { 
 }
