@@ -41,7 +41,7 @@ public class TestServiceImpl implements TestService {
     public void sqlTest() {
         List<SqlTest> list = sqlDao.queryAll();
         for (SqlTest test : list) {
-            logger.info(test.id + "|" + test.openid + "|" + test.nickname + "|" + test.headimgurl);
+            logger.info(test.id + " " + test.openid + " " + test.nickname + " " + test.headimgurl);
         }
     }
 
