@@ -6,4 +6,6 @@ package com.example.CloudClient.service;
 public interface TestService {
 
     void test();
+
+    void sqlTest();
 }

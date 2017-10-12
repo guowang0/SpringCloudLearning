@@ -21,6 +21,7 @@ public class RestTestController {
     @GetMapping("/test")
     public void test() {
         testService.test();
+        testService.sqlTest();
     }
 
 }
