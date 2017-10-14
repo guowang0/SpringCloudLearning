@@ -14,7 +14,7 @@ import java.util.List;
 @Mapper
 public interface DynamicSqlDao {
 
-    @SelectProvider(type = DynamicSql.class, method = "queryAll")
+    @SelectProvider(type = DynamicSql.class, method = "queryAll1")
     List<SqlTest> queryAll();
 
     class DynamicSql {
@@ -23,6 +23,10 @@ public interface DynamicSqlDao {
                 SELECT("*");
                 FROM("[imMessageWeixinUserInfo]");
             }}.toString();
+        }
+
+        public String queryAll1() {
+            return "select * from [imMessageWeixinUserInfo]";
         }
     }
 }
